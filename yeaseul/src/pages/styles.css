@@ -18,12 +18,17 @@ h1{
     text-align: center;
     margin: 10px;
     border-radius: 20px;
+    box-shadow: 1px 1px 8px grey;
 }
 
 .heart{
     display: flex;
     justify-content: space-around;
 
+}
+.like{
+    color: rgb(120, 120, 120);
+    margin: 12px;
 }
 
 .list{
@@ -43,7 +48,7 @@ h1{
     flex-direction: column;
     width: 410px;
     border: 3px solid rgb(59, 59, 59);
-    height: 300px;
+    height: 150px;
     overflow: scroll;
 }
 article{
@@ -54,16 +59,26 @@ article{
 .list li{
     margin-top: 10px;
 }
-.name p{ 
-    margin: 2px;
-}
 .name{
     width: 300px;
-    margin-top: 10px;
 }
-.yeaseul ,.num{
+h4{
+    margin: 0px;
+}
+.name p{
+    margin: 3px 0px 15px 0px;
+}
+.num{
     font-weight: bolder;
+    margin-bottom: 3px;
 }
 .heartBox{
     width: 300px;
+    flex-direction: row;
+    display: flex;
+}
+.date{
+    font-size: smaller;
+    margin-top: 5px;
+    color: gray;
 }
