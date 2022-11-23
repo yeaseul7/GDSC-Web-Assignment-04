@@ -12,15 +12,12 @@ body{
     flex-direction: column;
 }
 h1{
-    margin-left: 150px;
     margin-top: 0px;
-}
-.whelshi{
-    margin-left: 150px;
 }
 .kong{
     text-align: center;
     margin: 10px;
+    border-radius: 20px;
 }
 
 .heart{
@@ -30,5 +27,43 @@ h1{
 }
 
 .list{
-    
+    list-style: none;
+    margin: 10px 20px 10px 15px;
+
+}
+.commentInput{
+    margin: 30px 0px 10px 45px;
+    border: 2px solid lightgray;
+    padding: 10px;
+    font-size: 17px;
+    width: 19rem;
+}
+.commentBox{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    border: 3px solid rgb(59, 59, 59);
+    height: 300px;
+    overflow: scroll;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list li{
+    margin-top: 10px;
+}
+.name p{ 
+    margin: 2px;
+}
+.name{
+    width: 300px;
+    margin-top: 10px;
+}
+.yeaseul ,.num{
+    font-weight: bolder;
+}
+.heartBox{
+    width: 300px;
 }

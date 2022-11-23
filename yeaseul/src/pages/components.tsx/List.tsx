@@ -28,8 +28,8 @@ function List(){
             <Image 
              src="/웰시코기.jpeg"
              alt='웹시코기'
-             width={100}
-             height={100}
+             width={200}
+             height={200}
              className="whelshi"
              />
             <h1>웰시 왕국</h1>
@@ -38,22 +38,28 @@ function List(){
                 src="/kong.jpg"
                 
                 alt='kong'
-                width={380}
-                height={380}
+                width={360}
+                height={360}
                 className="kong"
 
                 />
                 <article className='heart'>
-                <Image src={isEmpty ? '/empty.png': "/heart.png"} alt="heart" width={50} height={50} className="heart" onClick={()=>{
+                <div className='heartBox'>
+                <Image src={isEmpty ? '/empty.png': "/heart.png"} alt="heart" width={30} height={30} className="heart" onClick={()=>{
                     setIsEmpty(prev => !prev) 
                     //?prev=> prevState
                 }}/>
+                </div>
+                <div className='name'>
+                <p className='yeaseul'>yeaseul</p>
+                <p>성냥팔이 소녀 컨셉이에요ㅎㅎ</p>
+                </div>
                 </article>
             </div>
             <div className='commentBox'>
                 <form onSubmit={onSubmitForm}>
                 <input 
-                id='commentList'
+                className="commentInput"
                 placeholder='엔터를 누르세요'
                 value={newComment}
                 onChange={onChangeInput}
@@ -62,7 +68,8 @@ function List(){
                 <ul className='list'>
                     {comment.map((todo: IComment)=>(
                         <li key={todo.id}>
-                            {todo.id}번 {todo.content}
+                            <div className='num'>익명 {todo.id} </div>
+                            {todo.content}
                         </li>
                     ))}
                 </ul>
